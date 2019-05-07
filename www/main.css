@@ -1,0 +1,51 @@
+.scroll{
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    background-color: grey;
+    display: block;
+  padding: 8px 16px;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+/*https://iamsteve.me/blog/entry/horizontal-scrolling-responsive-menu*/
+
+
+a {
+    color: white;
+}
+
+nav a {
+  margin: 2px;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+
+}
+
+nav a.active {
+  padding: 7px;
+  background-color: beige;
+  color: white;
+}
+
+nav a:hover:not(.active) {
+  padding: 7px;    
+  background-color: #555;
+  color: white;
+}
+
+fieldset { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+} 

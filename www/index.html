@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BudgetApp</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/index.js"type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css" type="text/css">
+	<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+    
+<!----------Pageone----------HomePage------------------------------->
+  
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>MyBudgetApp</h1>
+  </div>
+    
+<!----------------- navigation bar------------>
+    <header class="scroll">
+    <nav>
+         <a class="active" href="#pageone">Go to HomePage</a>
+         <a href="#pagetwo">AccountPage1</a>
+         <a href="#pagethree">AccountPage2</a>
+         <a href="#pagefour">AccountPage3</a>
+         <a href="#pagefive">Image-Upload</a>
+    </nav>
+    </header>
+<!--------------end-navigation bar------------>
+
+<!----------------body of page----------------->    
+    
+  <div data-role="main" class="ui-content">
+    <p>Welcome!This is a budget app home screen.</p>
+   
+  </div>
+    
+<!------------End-body of page-----------------> 
+
+  <div data-role="footer">
+      <h1>MyBudgetApp.inc 2019</h1>
+  </div>
+</div> 
+<!------------------End-HomePage----------------------------------->
+    
+<!------Pagetwo------------AccountPage1---------------------------->
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>MyBudgetApp</h1>
+  </div>
+    
+<!----------------- navigation bar------------>
+     <header class="scroll">
+    <nav>
+         <a href="#pageone">Go to HomePage</a>
+         <a class="active" href="#pagetwo">AccountPage1</a>
+         <a href="#pagethree">AccountPage2</a>
+         <a href="#pagefour">AccountPage3</a>
+         <a href="#pagefive">Image-Upload</a>
+    </nav>
+    </header>
+<!--------------end-navigation bar------------>
+    
+<!----------------body of page----------------->    
+
+  <div data-role="main" class="ui-content">
+    <p>Account Page 1 place holder.</p>
+<!------ slider bar------------>      
+ <fieldset>  
+   <form>
+       <!-- user enters there desierd budget title-->
+    <input type="text" id="textinput" placeholder="Name Your Budget Slider" accept=""  />
+  	    <!-- user submits the new title and is caputured in javascript function-->
+        <button onClick="submitText()">Submit A</button>
+       <!--this id is used by javascript to change the title-->
+    <p id="a1b1">Acount 1 Budget 1</p>
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        </form>
+ </fieldset>
+<!------ end slider bar------------> 
+      
+<!------ slider bar------------> 
+ <fieldset>
+       <form>
+    <input type="text" id="textinput" placeholder="Name Your Budget Slider" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+    <p id="a1b2">Acount 1 Budget 2</p>
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        
+    </form>
+ </fieldset>
+<!------end slider bar------------> 
+  </div>
+
+<!------------End-body of page-----------------> 
+
+  <div data-role="footer">
+    <h1>MyBudgetApp.inc 2019</h1>
+  </div>
+</div> 
+<!-----------------End-AccountPage1--------------------------------->
+    
+<!-------Pagethree----------AccountPage2---------------------------->
+
+<div data-role="page" id="pagethree">
+  <div data-role="header">
+    <h1>MyBudgetApp</h1>
+  </div>
+     
+<!----------------- navigation bar------------>
+    <header class="scroll">
+    <nav>
+         <a href="#pageone">Go to HomePage</a>
+         <a href="#pagetwo">AccountPage1</a>
+         <a class="active" href="#pagethree">AccountPage2</a>
+         <a href="#pagefour">AccountPage3</a>
+         <a href="#pagefive">Image-Upload</a>
+    </nav>
+    </header>
+<!--------------end-navigation bar------------>
+      
+<!----------------body of page----------------->
+
+  <div data-role="main" class="ui-content">
+    <p>Account Page 2 place holder.</p>
+   
+    
+    <fieldset>  
+   <form>
+    <input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+    
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        </form>
+ </fieldset>
+      
+ <fieldset>
+       <form>
+    <input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+    
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        
+    </form>
+ </fieldset>
+    
+    </div>
+<!------------End-body of page-----------------> 
+    
+  <div data-role="footer">
+    <h1>MyBudgetApp.inc 2019</h1>
+  </div>
+</div> 
+    
+<!-----------------End-AccountPage2--------------------------------->
+    
+<!-----PageFour---------AccountPage3-------------------------------->
+    
+    <div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>MyBudgetApp</h1>
+  </div>
+     
+<!----------------- navigation bar------------>
+    <header class="scroll">
+    <nav>
+         <a href="#pageone">Go to HomePage</a>
+         <a href="#pagetwo">AccountPage1</a>
+         <a href="#pagethree">AccountPage2</a>
+         <a class="active" href="#pagefour">AccountPage3</a>
+         <a href="#pagefive">Image-Upload</a>
+    </nav>
+    </header>
+<!--------------end-navigation bar------------>    
+        
+<!----------------body of page----------------->
+
+  <div data-role="main" class="ui-content">
+    <p>Account Page 3 place holder.</p>
+   
+       <fieldset>  
+   <form>
+    <input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+    
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        </form>
+ </fieldset>
+      
+ <fieldset>
+       <form>
+    <input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+    
+     <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+        
+    </form>
+ </fieldset>
+      
+      
+  </div>
+    
+   
+        
+<!------------End-body of page----------------->
+
+  <div data-role="footer">
+    <h1>MyBudgetApp.inc 2019</h1>
+  </div>
+</div> 
+    
+<!-----------------End-AccountPage3--------------------------------->    
+    
+<!-----Pagefive--------Image-Upload--------------------------------->
+    
+     
+    <div data-role="page" id="pagefive">
+  <div data-role="header">
+    <h1>MyBudgetApp</h1>
+  </div>
+     
+ <!----------------- navigation bar------------>
+   <header class="scroll">
+    <nav>
+         <a href="#pageone">Go to HomePage</a>
+         <a href="#pagetwo">AccountPage1</a>
+         <a href="#pagethree">AccountPage2</a>
+         <a href="#pagefour">AccountPage3</a>
+         <a class="active" href="#pagefive">Image-Upload</a>
+    </nav>
+    </header>
+<!--------------end-navigation bar------------>
+        
+<!----------------body of page----------------->
+
+  <div data-role="main" class="ui-content">
+    <p>Image Upload page place holder.</p>
+   
+ </div>
+	<div data-role="content">	
+       
+        <input type="file" accept="image/*" capture>
+		<div id="imagePreview"></div>
+        
+<!------------End-body of page----------------->        
+
+  <div data-role="footer">
+    <h1>MyBudgetApp.inc 2019</h1>
+  </div>
+</div> 
+    
+<!-----------------End-Image-Upload------------------------------>   
+    
+</body>
+</html>
