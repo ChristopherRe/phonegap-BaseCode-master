@@ -1,3 +1,3 @@
-phonegap-lifecycle-test
+phonegap-mobileapp-test
 =======================
- A simple PhoneGap Build application that counts the occurances of application lifecycle events 
+a mobile budget app 
